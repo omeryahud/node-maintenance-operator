@@ -21,9 +21,6 @@ spec:
             - matchExpressions:
               - key: node-role.kubernetes.io/master
                 operator: DoesNotExist
-      tolerations:
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
       containers:
         - name: node-maintenance-operator
           # Replace this with the built image name
