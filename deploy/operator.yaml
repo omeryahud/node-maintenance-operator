@@ -20,7 +20,7 @@ spec:
             nodeSelectorTerms:
             - matchExpressions:
               - key: node-role.kubernetes.io/master
-                operator: Exists
+                operator: DoesNotExist
       tolerations:
       - key: node-role.kubernetes.io/master
         effect: NoSchedule
